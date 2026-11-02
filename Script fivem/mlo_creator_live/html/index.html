@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="panel" hidden>
+  <div class="title">MLO Creator <span>live</span></div>
+  <div id="name" class="sub"></div>
+  <div id="sel" class="box"></div>
+  <div id="steps" class="sub"></div>
+  <div id="help" class="box keys"></div>
+</div>
+<div id="ask" hidden>
+  <div class="title">Add a prop of the game</div>
+  <input id="model" type="text" placeholder="prop_chair_01a, v_ilev_ph_door01..." autocomplete="off" spellcheck="false">
+  <div class="sub">Enter: put it where the crosshair points · Esc: cancel</div>
+</div>
+<div id="wpanel" hidden>
+  <div class="title">MLO Creator <span>murs</span></div>
+  <div id="wname" class="sub"></div>
+  <div id="wsel" class="box"></div>
+  <div id="wsteps" class="sub"></div>
+  <div id="whelp" class="box keys"></div>
+</div>
+<div id="winsp" hidden></div>
+<div id="wpaste" hidden>
+  <div class="title">Coller les murs de MLO Creator</div>
+  <div class="sub">Dans MLO Creator : panneau Murs, « Copier les murs pour FiveM », puis Ctrl+V ici. Les murs de la session sont remplacés.</div>
+  <textarea id="wpastetext" spellcheck="false" placeholder='{"mlocreator":"walls", ...}'></textarea>
+  <div class="row"><button id="wpasteok" class="btn primary">Coller</button><button id="wpastecancel" class="btn">Annuler</button></div>
+</div>
+<textarea id="wcopy" aria-hidden="true"></textarea>
+<div id="toasts"></div>
+<script src="app.js"></script>
+<script src="walls.js"></script>
+</body>
+</html>
